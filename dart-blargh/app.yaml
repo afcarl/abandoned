@@ -1,0 +1,31 @@
+application: dhcblargh
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /(.*\.(js|css))
+  static_files: client/\1
+  upload: client/(.*\.(js|css))
+
+- url: /api/.*
+  script: server.api.app
+  secure: always
+
+- url: /admin
+  static_files: client/Admin.html
+  upload: client/Admin.html
+  login: admin
+  secure: always
+
+- url: /404
+  static_files: client/404.html
+  upload: client/404.html
+
+- url: /
+  static_files: client/Blargh.html
+  upload: client/Blargh.html
+
+- url: /.*
+  script: server.redirect.app
