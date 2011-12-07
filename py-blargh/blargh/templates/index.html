@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Blargh</title>
+  </head>
+  <body>
+    <div class="entries">
+      {% for entry in entries %}
+      <div class="entry">
+	<div class="entry-date">{{ entry.created }}</div>
+	<div class="entry-title">{{ entry.title }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
