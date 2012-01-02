@@ -1,0 +1,30 @@
+# a simple fibonacci function
+# defn is the same as let f = fn (n) ...
+defn fibonacci(n) {
+  let k = 1 # no semicolons
+  let fkm1 = 1
+  let fk = 1
+
+  # one type of loop
+  loop {
+    if k == n {
+      break # manual loop escaping
+    } else {
+      fkm1 = b
+      fk = a + b
+      k = k + 1
+    }
+  }
+
+  # last expression in flow is the function value
+  b
+}
+
+# recursive style
+let fibonacci2 = fn (n) {
+  if n < 2 {
+    1
+  } else {
+    fibonacci2(n - 1) + fibonacci2(n - 2)
+  }
+}
