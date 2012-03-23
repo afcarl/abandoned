@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript" src="array_additions.js"></script>
+<script type="text/javascript" src="regex.js"></script>
+<script type="text/javascript" src="mod.js"></script>
+<script type="text/javascript" src="parser.js"></script>
+<script type="text/javascript" src="webcalc.js"></script>
+</head>
+<body>
+
+<h1>Modular Arithmetic Calculator</h1>
+
+<form onsubmit="evalInput();">
+    Modulus: <input type="text" id="inputMod" onkeypress="evalEnter()" size="10"></input><br>
+    Expression: <input type="text" id="inputExpr" onkeypress="evalEnter(event)" size="40"></input>
+    <button type="button" id="evalButton" onmouseup="evalInput(event)">Evaluate</button>
+</form>
+
+<table id="results" border="1">
+    <tr>
+        <td width="300"><b>Expression</b></td>
+        <td width="100"><b>Modulus</b></td>
+        <td width="100"><b>Value</b></td>
+    </tr>
+</table>
+
+</body>
+</html>
