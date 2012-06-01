@@ -1,0 +1,51 @@
+markov
+
+## ABOUT
+
+A Markov chain text-generation algorithm in a variety of programming languages.
+Implemented per chapter 3 of "The Practice of Programming" by Brian Kernighan
+and Rob Pike.
+
+Currently, implementations are available in the following languages:
+
+- C
+- Go
+- Python
+- Java
+
+
+## BUILD
+
+C:      gcc -o markov markov.c
+Go:     go build markov.go
+Python: N/A
+Java:   javac Markov.java
+
+
+## USAGE
+
+The program needs to be "trained" with some sample text; two examples,
+iliad.txt and psalms.txt are provided.
+
+Each program reads text from standard input and writes to standard output.
+If you want to train from a file or redirect output to a file, use pipes.
+
+To specify the number of words of generated text, provide an integer as a
+command-line argument.
+
+Example:
+    ./markov 500 < iliad.txt > foo.txt
+
+This trains on iliad.txt, generates 500 words of text, and writes to foo.txt.
+
+
+## AUTHOR
+
+Except for the C implementation, which is copied with few changes from TPOP,
+these programs were written by Daniel Connelly.  You can find my stuff at
+dhconnelly.com or email me at dhconnelly@gmail.com.
+
+
+## LICENSE
+
+A BSD-style license; see LICENSE for more details.
