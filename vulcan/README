@@ -1,0 +1,42 @@
+vulcan
+
+# ABOUT
+
+Vulcan is a small, dynamic programming language that compiles to JavaScript.
+Its syntax is similar to Python and Ruby but its semantics are stricter.  It
+exists as an exercise in language design and compiler construction.
+
+For a simple example, see the file `example.vn`.
+
+# STATUS
+
+Vulcan is currently in active development.  The following components are
+implemented:
+
+- an LL(2) recursive-descent parser that emits an abstract syntax tree.
+
+# DEPENDENCIES
+
+The only dependency is Python 2.7.
+
+# USAGE
+
+Currently, only the parser is implemented.  You can run it as a program that
+displays a prompt and pretty-prints the AST of the parsed input by running 
+`python parser.py`.  You can also provide a file name argument to
+pretty-print the AST of a separate program:
+
+    python parser.py example.vn
+
+# TODO
+
+See the TODO file for the current project plan.
+
+# AUTHOR
+
+vulcan is written and maintained by Daniel Connelly.  You can find my stuff at
+dhconnelly.com or email me at dhconnelly@gmail.com.
+
+# LICENSE
+
+vulcan is released under a BSD-style license.  See LICENSE for more details.

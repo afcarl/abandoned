@@ -1,0 +1,9 @@
+TODO
+
+(parser)    Improve syntax errors
+(parser)    Make Lexer use a generator as input source
+(parser)    Cleanup globals
+(ast)       Add apply() method to nodes
+(analyzer)  Write flatten()
+(analyzer)  Write check_types()
+(repl)      Implement basic tree-walking interpreter
